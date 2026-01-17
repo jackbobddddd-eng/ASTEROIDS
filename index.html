@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atari Asteroids 1979</title>
+</head>
+<body>
+<div id="container">
+    <div id="ui">
+        <div class="score-line">
+            <div class="score-box">1 <br> <span id="score">00</span></div>
+            <div class="score-box">HI-SCORE <br> <span id="hi-score">5000</span></div>
+        </div>
+        <div id="lives-display"></div>
+        <button id="leaderboard-btn">LEADERBOARD</button>
+    </div>
+    
+    <canvas id="gameCanvas"></canvas>
+    
+    <div id="attract" class="modal">
+        <h1 class="flicker">ASTEROIDS</h1>
+        <p class="blink-text">PRESS ANY KEY TO BEGIN</p>
+        <div class="credits">© 1979 ATARI INC</div>
+    </div>
+
+    <div id="game-over" class="modal">
+        <h2 class="flicker">GAME OVER</h2>
+        <p>FINAL SCORE: <span id="final-score">0</span></p>
+        <p class="small-text">PRESS ANY KEY TO RETURN</p>
+    </div>
+
+    <div id="leaderboard-modal" class="modal">
+        <h3>RANKINGS</h3>
+        <ul id="score-list"></ul>
+        <button id="close-btn">CLOSE</button>
+    </div>
+</div>
+</body>
+</html>
